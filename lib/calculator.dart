@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart' hide Colors;
-import 'package:modern_calculator/widgets/calculator_display.dart';
-import 'package:modern_calculator/widgets/calculator_tab.dart';
-import 'package:modern_calculator/widgets/calculator_second_display.dart';
+import 'widgets/calculator_display.dart';
+import 'widgets/calculator_tab.dart';
+import 'widgets/calculator_second_display.dart';
 import '../src/styles.dart';
 
 class CalculatorApp extends StatelessWidget {

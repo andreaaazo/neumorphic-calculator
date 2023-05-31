@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:modern_calculator/widgets/calculator_processor.dart';
+import 'package:neumorphic_mobile_calculator/widgets/calculator_processor.dart';
 import '../src/ui.dart';
 
 /// A widget that displays the second calculator display showing additional information or history.
