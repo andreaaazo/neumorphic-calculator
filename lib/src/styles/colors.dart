@@ -1,6 +1,6 @@
 import 'package:flutter/services.dart';
 
-class Colors {
+class UIColors {
   static final Map primary = {
     100: const Color.fromRGBO(231, 214, 247, 1),
     200: const Color.fromRGBO(207, 175, 240, 1),

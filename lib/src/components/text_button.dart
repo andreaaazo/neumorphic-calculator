@@ -1,22 +1,21 @@
 import 'dart:async';
-import 'package:flutter/material.dart' hide BoxDecoration, BoxShadow, Colors;
+import 'package:flutter/material.dart' hide BoxDecoration, BoxShadow;
 import 'package:flutter_inset_box_shadow/flutter_inset_box_shadow.dart';
-import '../styles/typography.dart';
-import 'package:modern_calculator/styles/colors.dart';
+import '../styles.dart';
 
-class TextButton extends StatefulWidget {
+class UITextButton extends StatefulWidget {
   final String text;
   final String? type;
   final Function()? onTap;
 
-  const TextButton(
+  const UITextButton(
       {required this.type, required this.text, this.onTap, super.key});
 
   @override
-  TextButtonState createState() => TextButtonState();
+  UITextButtonState createState() => UITextButtonState();
 }
 
-class TextButtonState extends State<TextButton> {
+class UITextButtonState extends State<UITextButton> {
   bool isPressed = false;
   Color? typeColor;
 
@@ -24,13 +23,13 @@ class TextButtonState extends State<TextButton> {
   Widget build(BuildContext context) {
     switch (widget.type) {
       case "primary":
-        typeColor = isPressed ? Colors.primary[600] : Colors.primary[500];
+        typeColor = isPressed ? UIColors.primary[600] : UIColors.primary[500];
         break;
       case "secondary":
-        typeColor = isPressed ? Colors.neutral[600] : Colors.neutral[500];
+        typeColor = isPressed ? UIColors.neutral[600] : UIColors.neutral[500];
         break;
       default:
-        typeColor = isPressed ? Colors.primary[600] : Colors.primary[500];
+        typeColor = isPressed ? UIColors.primary[600] : UIColors.primary[500];
         break;
     }
 
@@ -100,8 +99,8 @@ class TextButtonState extends State<TextButton> {
         child: Paragraph(
           text: widget.text,
           color: isPressed
-              ? Colors.textAndIconLight[200]
-              : Colors.textAndIconLight[100],
+              ? UIColors.textAndIconLight[200]
+              : UIColors.textAndIconLight[100],
         ),
       ),
     );
