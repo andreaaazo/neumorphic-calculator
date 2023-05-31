@@ -42,19 +42,25 @@ class CalculatorSecondDisplayState extends State<CalculatorSecondDisplay> {
   @override
   Widget build(BuildContext context) {
     return UIContainer(
-      width: double.infinity,
-      color: UIColors.neutral[500],
-      margin: const EdgeInsets.fromLTRB(54, 0, 54, 24),
-      padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 4),
-      alignment: Alignment.centerRight,
-      shape: "outsideRounded",
-      child: _buildParagraph(
-        text,
-        size: 16,
-        color: UIColors.textAndIconLight[200],
-        textAlign: TextAlign.right,
-      ),
-    );
+        width: double.infinity,
+        color: UIColors.neutral[500],
+        margin: const EdgeInsets.fromLTRB(54, 0, 54, 24),
+        padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 4),
+        alignment: Alignment.centerRight,
+        shape: "outsideRounded",
+        child:
+            Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
+          _buildParagraph("EXPRESSION",
+              size: 12,
+              color: UIColors.textAndIconLight[200],
+              textAlign: TextAlign.left),
+          _buildParagraph(
+            text,
+            size: 16,
+            color: UIColors.textAndIconLight[100],
+            textAlign: TextAlign.right,
+          ),
+        ]));
   }
 
   /// Builds a [Paragraph] widget with the given [text], [size], [color], and [textAlign].

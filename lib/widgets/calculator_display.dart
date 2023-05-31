@@ -26,7 +26,7 @@ class CalculatorDisplayState extends State<CalculatorDisplay> {
   @override
   Widget build(BuildContext context) {
     return UIContainer(
-      shape: "inside",
+      shape: "outsideRounded",
       width: double.infinity,
       alignment: Alignment.centerRight,
       padding: const EdgeInsets.fromLTRB(24, 12, 34, 12),
