@@ -13,7 +13,7 @@
   <h1 align="center">Neumorphic Calculator App</h1>
 
   <p align="center">
-    A basic Python server so you don’t start from scratch
+    A user-friendly mobile calculator app for both IOS and Android with a visually pleasing neumorphic design.
     <br />
     <br />
     <a href="#-ui-case-study">View Demo</a>
@@ -109,7 +109,7 @@ graph TD
 
 ## 🎨 UI Case Study
 
-<img src="screenshots/screenshot.png"></img>
+<img src="screenshots/screenshot.png" width="50%"></img>
 
 The Neumorphic Calculator App showcases a **neumorphic user interface design**, which provides an elegant and tactile user experience. The app adheres to the [Eva Design System](https://colors.eva.design/), utilizing a harmonious combination of **purple, black, and white** colors to create a visually appealing interface.
 
