@@ -44,6 +44,8 @@
 
 ## 📋 About the project
 
+<img src="screenshots/preview.gif" width="50%"></img>
+
 The Neumorphic Calculator App is a Dart and Flutter-based application that provides a **user-friendly calculator interface** with a visually pleasing **neumorphic design**. The app follows the [Eva Design System](https://colors.eva.design/), predominantly utilizing shades of purple, black, and white to create a sleek and modern aesthetic.
 
 ## 🚀 Getting started
